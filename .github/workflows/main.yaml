@@ -34,7 +34,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          file: app/Airlines/Dockerfile
+          file: app/Airlines/
           tags: |
             ghcr.io/user/app:latest
             ghcr.io/user/app:1.0.0
