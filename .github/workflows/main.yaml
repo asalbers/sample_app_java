@@ -28,6 +28,6 @@ jobs:
         with:
           push: true
           tags: |
-            azurecr.io/user/app:latest
-            azurecr.io/user/app:1.0.0
+            aalabconreg.azurecr.io/user/app:latest
+            aalabconreg.azurecr.io/user/app:1.0.0
             
