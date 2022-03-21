@@ -28,6 +28,6 @@ jobs:
         with:
           push: true
           tags: |
-            aalabconreg.azurecr.io/user/app:latest
-            aalabconreg.azurecr.io/user/app:1.0.0
+            aalabconreg.azurecr.io/sample_java_app:latest
+            aalabconreg.azurecr.io/sample_java_app:1.0.0
             
