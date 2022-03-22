@@ -10,6 +10,7 @@ on:
 jobs:
   docker_build_prod:
     runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
     steps:
       -
         name: Set up QEMU
