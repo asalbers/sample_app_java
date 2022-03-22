@@ -22,7 +22,8 @@ Need to create a Personal access token in github to setup the repository for acc
 </details>
 
 ```sh
-export GITHUB_TOKEN=<your-personal-access-token>export GITHUB_USER=<your-github-username> GITHUB_REPO=<repo name>
+export GITHUB_TOKEN=<your-personal-access-token>
+export GITHUB_USER=<your-github-username> GITHUB_REPO=<repo name>
 
 ```
 
@@ -87,3 +88,5 @@ The command below should be ran in the repo that will contain the deployments
 flux create source git demo \--url=https://github.com/$GITHUB_USER/$GITHUB_REPO \--branch=main \--interval=30s \--export > ./clusters/$CLUSTER_NAME/demo-source.yaml
 ```
 
+
+### 
