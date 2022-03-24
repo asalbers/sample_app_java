@@ -83,3 +83,4 @@ jobs:
           tags: |
             aalabconreg.azurecr.io/sample_java_app:test
 
+# test
