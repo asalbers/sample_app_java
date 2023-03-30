@@ -22,7 +22,7 @@ jobs:
         name: Login to Azure Container Registry
         uses: docker/login-action@v1 
         with:
-          registry: aalabconreg.azurecr.io
+          registry: aaconreg.azurecr.io.azurecr.io
           username: ${{ secrets.ACR_USER }}
           password: ${{ secrets.ACR_TOKEN }}
       -
@@ -31,8 +31,8 @@ jobs:
         with:
           push: true
           tags: |
-            aalabconreg.azurecr.io/sample_java_app:latest
-            aalabconreg.azurecr.io/sample_java_app:1.0.0
+            aaconreg.azurecr.io/sample_java_app:latest
+            aaconreg.azurecr.io/sample_java_app:1.0.0
 
   docker_build_dev:
     runs-on: ubuntu-latest
@@ -48,7 +48,7 @@ jobs:
         name: Login to Azure Container Registry
         uses: docker/login-action@v1 
         with:
-          registry: aalabconreg.azurecr.io
+          registry: aaconreg.azurecr.io.azurecr.io
           username: ${{ secrets.ACR_USER }}
           password: ${{ secrets.ACR_TOKEN }}
       -
@@ -57,7 +57,7 @@ jobs:
         with:
           push: true
           tags: |
-            aalabconreg.azurecr.io/sample_java_app:dev
+            aaconreg.azurecr.io/sample_java_app:dev
 
   docker_build_test:
     runs-on: ubuntu-latest
@@ -73,7 +73,7 @@ jobs:
         name: Login to Azure Container Registry
         uses: docker/login-action@v1 
         with:
-          registry: aalabconreg.azurecr.io
+          registry: aaconreg.azurecr.io
           username: ${{ secrets.ACR_USER }}
           password: ${{ secrets.ACR_TOKEN }}
       -
@@ -82,6 +82,6 @@ jobs:
         with:
           push: true
           tags: |
-            aalabconreg.azurecr.io/sample_java_app:test
+            aaconreg.azurecr.io/sample_java_app:test
 
 # test
