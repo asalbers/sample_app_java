@@ -10,4 +10,3 @@ GitOps Deployment to multiple namespaces
 
 ## Security
 
-test
